@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼图游戏</title>
+    <link rel="stylesheet" href="game_style.css">
+    <link rel="stylesheet" href="image/方向箭头矢量图片/iconfont.css">
+</head>
+
+<body>
+    <button class="game-start">开始游戏</button>
+    <div class="theme-picker">
+        <button data-color="default">默认</button>
+        <button data-color="dark">暗黑</button>
+        <button data-color="nature">自然</button>
+        <button data-color="blue">浅蓝</button>
+        <button data-color="orange">亮橙</button>
+        <button data-color="mix-change">彩色切换</button>
+    </div>
+    <main class="content">主题展示区域</main>
+
+    <div class="hint">
+        <div class="timer">
+            已消耗时间：
+            <span>0</span>
+        </div>
+
+        <div class="move-count">
+            已移动次数：
+            <span>0</span>
+        </div>
+
+        <div class="arrow-key">
+            <span class="iconfont icon-anjianshang"></span>
+            <span class="iconfont icon-anjianxia"></span>
+            <span class="iconfont icon-anjianzuo"></span>
+            <span class="iconfont icon-anjianyou"></span>
+        </div>
+
+        <div class="key-prompt">
+            <span>移动拼图的方式如下：<br></span>
+            <ul type="none">
+                <li>鼠标滑动</li>
+                <li>wsad按键</li>
+                <li>方向箭头</li>
+            </ul>
+            <span>按ctrl+a可以查看完整图片<br></span>
+            <span>按r可以重新开始游戏</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="image/back_ground/拼图背景.png" alt="" class="back-ground">
+        <table class="image-frame">
+            <tr>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_1.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_2.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_3.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_4.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_5.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_6.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_7.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_8.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_9.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_10.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_11.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_12.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_13.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_14.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_15.jpg" alt=""></td>
+                <td><img src="image/dog_images/dog_materials_1/狗素材1_16.jpg" alt=""></td>
+            </tr>
+        </table>
+    </div>
+    <script src="puzzle_logic.js"></script>
+</body>
+
+</html>
