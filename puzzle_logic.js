@@ -31,7 +31,6 @@ const arrowArr = document.querySelectorAll('.iconfont');
 
 const wholtImageSrc = "https://cdn.jsdelivr.net/gh/lyyy-1728/my_puzzle_game@main/image/dog_images/dog_materials_1/狗素材1（all）.jpg"
 
-
 const wholeImage = document.createElement('img');
 wholeImage.src = wholtImageSrc;
 
@@ -185,7 +184,7 @@ function oneKeyVictory() {
         [13, 14, 15, 16]
     ]
 
-    const path = "image/dog_images/dog_materials_1/狗素材1_";
+    const path = "https://cdn.jsdelivr.net/gh/lyyy-1728/my_puzzle_game@main/image/dog_images/dog_materials_1/狗素材1_";
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
             table_matrix[i][j].children[0].src = path + rightIndexArr[i][j] + ".jpg";
@@ -567,7 +566,7 @@ function shufleImageNum() {
             randomArr[x][y] = temp;
         }
     }
-    const path = "image/dog_images/dog_materials_1/狗素材1_";
+    const path = "https://cdn.jsdelivr.net/gh/lyyy-1728/my_puzzle_game@main/image/dog_images/dog_materials_1/狗素材1_";
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
             table_matrix[i][j].children[0].src = path + randomArr[i][j] + ".jpg";
@@ -583,5 +582,4 @@ function getRandomInt(max) {
 // 获取从min到max的随机整数
 function getRandomBetween(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-
 }
