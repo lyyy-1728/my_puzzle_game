@@ -29,7 +29,8 @@ let timerText = document.querySelector(".timer span");
 const arrowArr = document.querySelectorAll('.iconfont');
 
 
-const wholtImageSrc = "image/dog_images/dog_materials_1/狗素材1（all）.jpg"
+const wholtImageSrc = "https://cdn.jsdelivr.net/gh/lyyy-1728/my_puzzle_game@main/image/dog_images/dog_materials_1/狗素材1（all）.jpg"
+
 
 const wholeImage = document.createElement('img');
 wholeImage.src = wholtImageSrc;
@@ -582,4 +583,5 @@ function getRandomInt(max) {
 // 获取从min到max的随机整数
 function getRandomBetween(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+
 }
